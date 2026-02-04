@@ -52,7 +52,7 @@ function App() {
 
         <div className="contact">
           <p>📧 gunashreehm@gmail.com</p>
-          <p>📞 +91 XXXXXXXXXX</p>
+          <p>📞 +91 9164215417</p>
           <p>
             💻{" "}
             <a
