@@ -1,138 +1,146 @@
-import "./App.css";
+import React from 'react';
+import './App.css';
 
 function App() {
   return (
-    <>
-      {/* ===== HERO (ONLY ENHANCED, NOT REDESIGNED) ===== */}
-      <section className="hero">
-        <span className="availability">🟢 Available for opportunities</span>
+    <div className="portfolio-wrapper">
+      {/* Decorative background lines to fill white space */}
+      <div className="bg-line line-left"></div>
+      <div className="bg-line line-right"></div>
 
-        <h1>Gunashree HM</h1>
-        <p className="role">Gesix GeoAI Intern</p>
+      <header className="nav-container">
+        <div className="logo">Gunashree<span>.</span>HM</div>
+        <nav className="links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="mailto:gunashreehm@gmail.com" className="contact-pill">Contact Me</a>
+        </nav>
+      </header>
 
-        <p className="heroIntro">
-          I am an Information Science and Engineering student with a strong
-          interest in software development. I enjoy learning by building real
-          projects and understanding how applications work in practice.
-        </p>
+      <main className="main-content">
+        {/* HERO SECTION - Corrected Tag Error */}
+        <section className="hero">
+          <div className="status-pill">🟢 Available for Opportunities</div>
+          <h1>Crafting Intelligent <br/><span>Software Solutions.</span></h1>
+          <p className="hero-bio">
+            Information Science Engineer and <strong>GeoAI Intern</strong> at Gesix. 
+            </p>
+            <p>
+              I am an Information Science and Engineering student with a strong
 
-        <p className="heroIntro">
-          Currently focused on strengthening my fundamentals in web development
-          and backend technologies while exploring modern tools step by step.
-        </p>
-
-        <a href="#projects" className="primaryBtn">
-          View My Work
-        </a>
-      </section>
-
-      {/* ===== ABOUT (WIDER, CLEANER, MORE EXPLANATION) ===== */}
-      <section className="about" id="about">
-        <h2>About Me</h2>
-
-        <p>
-          I am an Information Science and Engineering student who is curious
-          about how software systems are designed and built. Rather than
-          memorizing concepts, I prefer understanding them by applying them
-          through hands-on projects.
-        </p>
-
-        <p>
-          My learning journey started with basic programming and gradually
-          expanded into web development and backend technologies. Working on
-          projects helped me understand problem-solving, logical thinking, and
-          how different components of an application come together.
-        </p>
-
-        <p>
-          I believe in writing clean, readable code and improving continuously
-          through practice. I am currently seeking opportunities where I can
-          learn, contribute, and grow as a software developer.
-        </p>
-
-        <div className="contact">
-          <p>📧 gunashreehm@gmail.com</p>
-          <p>📞 +91 9164215417</p>
-          <p>
-            💻{" "}
-            <a
-              href="https://github.com/gunashree-hm"
-              target="_blank"
-              rel="noreferrer"
-            >
-              github.com/gunashree-hm
-            </a>
+          interest in software development.
           </p>
-        </div>
-      </section>
-
-      {/* ===== PROJECTS (UNCHANGED – CARD STYLE KEPT) ===== */}
-      <section className="projects" id="projects">
-        <h2>Projects</h2>
-
-        <div className="projectGrid">
-          <div className="projectCard">
-            <h3>AI Occupancy Monitoring System</h3>
-            <p>
-              Built an AI-based system using thermal sensors to estimate crowd
-              occupancy while maintaining privacy.
-            </p>
-            <span>Python · AI · Sensors</span>
+          <div className="hero-btns">
+            <a href="#projects" className="primary-btn">Explore Work</a>
           </div>
+        </section>
 
-          <div className="projectCard">
-            <h3>Attendance Management System</h3>
-            <p>
-              Developed a web application to record and manage attendance using
-              secure backend logic.
-            </p>
-            <span>Django · HTML · CSS · SQL</span>
+        {/* ABOUT ME SECTION */}
+        <section id="about" className="content-section">
+          <h2 className="section-title">About Me</h2>
+          <div className="about-grid">
+            <div className="about-text">
+              <p>
+                I am a final-year Information Science student at <strong>Global Academy of Technology</strong> with a CGPA of 8.15. 
+                  I am an Information Science and Engineering student who is curious
+
+          about how software systems are designed and built.
+              </p>
+              <p>
+                 My learning journey started with basic programming and gradually
+
+          expanded into web development and backend technologies. Working on
+
+          projects helped me understand problem-solving, logical thinking.
+          </p>
+            </div>
           </div>
+        </section>
 
-          <div className="projectCard">
-            <h3>Personal Portfolio Website</h3>
-            <p>
-              Designed and developed a portfolio website to showcase projects
-              and skills.
-            </p>
-            <span>React · Vite · CSS</span>
+        {/* PROJECTS SECTION - Exclusive to Resume Projects */}
+        <section id="projects" className="content-section">
+          <h2 className="section-title">Technical Projects</h2>
+          <div className="project-grid">
+            
+            {/* AgriVision */}
+            <div className="glass-card project-card">
+              <div className="card-header">
+                <span className="tech-label">ML · React · Flask</span>
+                <h3>AgriVision: Smart Agriculture</h3>
+              </div>
+              <p>An AI-driven system combining soil parameters with CNN-based plant imaging for early disease detection.</p>
+              <ul className="impact-list">
+                <li>Expected 35% improvement in diagnostic speed.</li>
+                <li>Projected 25% increase in crop yield through early stress prediction.</li>
+              </ul>
+            </div>
+
+            {/* Containerized Chronicles */}
+            <div className="glass-card project-card">
+              <div className="card-header">
+                <span className="tech-label">Django · Python · SQL</span>
+                <h3>Containerized Chronicles</h3>
+              </div>
+              <p>A scalable blog application with secure authentication and role-based access control.</p>
+              <ul className="impact-list">
+                <li>Integrated Text-to-Speech features for accessible content.</li>
+                <li>Optimized workflows using Django's MVT architecture.</li>
+              </ul>
+            </div>
+
+            {/* Weather Dashboard */}
+            <div className="glass-card project-card">
+              <div className="card-header">
+                <span className="tech-label">React.js · Express · API</span>
+                <h3>Weather Dashboard</h3>
+              </div>
+              <p>Real-time climate insights dashboard with OpenWeather API integration and geolocation support.</p>
+              <ul className="impact-list">
+                <li>Responsive interface built with TailwindCSS and React Hooks.</li>
+                <li>Implemented 7-day weather forecasting and unit toggles.</li>
+              </ul>
+            </div>
+
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ===== SKILLS (UNCHANGED – OVAL / PILL STYLE KEPT) ===== */}
-      <section className="skills">
-        <h2>Skills</h2>
-
-        <div className="skillGroup">
-          <h4>Programming</h4>
-          <div className="skillPills">
-            <span>Python</span>
-            <span>JavaScript</span>
-            <span>SQL</span>
+        {/* EXPERIENCE SECTION */}
+        <section id="experience" className="content-section">
+          <h2 className="section-title">Work Experience</h2>
+          <div className="glass-card exp-card">
+            <div className="exp-header">
+              <h4>GeoAI Intern</h4>
+              <span className="company">Gesix | Feb 2026 </span>
+            </div>
+            <p>Applying Geospatial AI techniques to process and analyze spatial data for real-world automation. Collaborating on backend architectures  to support complex AI pipelines.</p>
           </div>
-        </div>
+        </section>
 
-        <div className="skillGroup">
-          <h4>Web Technologies</h4>
-          <div className="skillPills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>React</span>
+        {/* SKILLS SECTION */}
+        <section className="content-section">
+          <h2 className="section-title">Technical Stack</h2>
+          <div className="skill-container">
+            <div className="skill-group">
+              <h4>Programming</h4>
+              <div className="skill-pills">
+                <span>Python</span> <span>JavaScript</span> <span>SQL</span> <span>Java</span> <span>C</span> 
+              </div>
+            </div>
+            <div className="skill-group">
+              <h4>Frameworks & Tools</h4>
+              <div className="skill-pills">
+                <span>React</span> <span>Django</span> <span>Flask</span> <span>Git</span> <span>GitHub</span> 
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+      </main>
 
-        <div className="skillGroup">
-          <h4>Tools & Frameworks</h4>
-          <div className="skillPills">
-            <span>Django</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>VS Code</span>
-          </div>
-        </div>
-      </section>
-    </>
+      <footer className="footer">
+        <p>© 2026 Gunashree H M | Built for Performance & Impact</p>
+      </footer>
+    </div>
   );
 }
 
