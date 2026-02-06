@@ -14,7 +14,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
-          <a href="mailto:gunashreehm@gmail.com" className="contact-pill">Contact Me</a>
+          <a href="mailto:gunashreehm@gmail.com" className="contact-pill">Contact </a>
         </nav>
       </header>
 

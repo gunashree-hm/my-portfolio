@@ -5,7 +5,7 @@
 This project is a personal portfolio website built using React and Vite.  
 The objective of the portfolio is to present my technical skills, academic background, projects, and experience in a clean, modern, and professional manner.
 
-The portfolio serves as both a personal branding platform and an internship assignment deliverable, focusing on clarity, performance, and visual appeal rather than excessive animations.
+
 
 ---
 
@@ -16,7 +16,7 @@ I decided to divide the site into clear sections: Hero, About, Projects, Experie
 
 The design inspiration focused on:
 - A wide, clean layout
-- Minimal but professional typography
+- Minimal  professional typography
 - Dark theme with purple accents for contrast
 - Card-based sections for projects and experience
 
@@ -85,8 +85,10 @@ These issues were resolved by:
 - Carefully reviewing JSX syntax
 - Restarting the development server using `npm run dev`
 - Moving the README file to the repository root
+- I have used Gemini CLI to solve the problems which i have faced during development.
 
 These challenges helped improve debugging skills and understanding of the React workflow.
+
 
 ---
 
@@ -112,7 +114,7 @@ Current status:
 - README documentation completed
 
 Planned improvements:
-- Deployment using Vercel or Netlify
+- Deployment using Vercel 
 - Mobile responsiveness testing
 - Performance optimization using Lighthouse
 
